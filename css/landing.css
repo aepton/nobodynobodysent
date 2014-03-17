@@ -1,0 +1,43 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dropdown-menu {
+  border: 0;
+}
+
+.jumbotron {
+  background-color: #fff;
+  padding-top: 10px !important;
+}
+
+.jumbotron p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #fff;
+  border-top: 5px solid #5cb85c;
+  padding-top: 10px;
+  color: #777;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #5cb85c;
+}
+
+.datetime {
+  font-size: 12px;
+  font-variant: small-caps;
+}
