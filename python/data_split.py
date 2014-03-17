@@ -11,6 +11,9 @@ def load_and_split(path, name_prefix, name_property):
     obj = json.loads(fh.read())
     fh.close()
     print 'About to operate on %d features' % len(obj['features'])
+    print 'Figure out how to: spit out color-coded map for certain set of features'
+    print 'Like: auto-generate county-by-county color-coded map for gov'
+    print 'Or: precinct-level color-coded map for state rep races'
     for i in obj['features']:
         #print i['properties']
         #break
