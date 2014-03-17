@@ -20,5 +20,8 @@ def load_and_split(path, name_prefix, name_property):
         fh.close()
 
 if __name__ == '__main__':
-    state_reps = 'state_reps_09.geojson'
-    load_and_split(state_reps, 'state_rep', 'SLDLST')
+    #state_reps = 'state_reps_09.geojson'
+    #state_rep_property = 'SLDLST'
+    cook_comms = 'cook_county_comm_10.geojson'
+    cook_comm_property = 'District_N'
+    load_and_split('%s%s' % (DATA_PATH_PREFIX, cook_comms), 'cook_comm', cook_comm_property)
