@@ -32,6 +32,8 @@ if __name__ == '__main__':
     #cook_subcircuit_property = 'DISTRICT'
     #counties = 'counties_09.geojson'
     #counties_property = 'NAME'
-    cong = 'pa_97-14_cong.geojson'
-    cong_property = 'District_N'
-    load_and_split('%s%s' % (DATA_PATH_PREFIX, cong), 'congress/cong', cong_property)
+    #cong = 'pa_97-14_cong.geojson'
+    #cong_property = 'District_N'
+    wards = 'wards_12.geojson'
+    wards_property = 'District_N'
+    load_and_split('%s%s' % (DATA_PATH_PREFIX, wards), 'wards/ward', wards_property)
