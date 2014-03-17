@@ -10,6 +10,7 @@ def load_and_split(path, name_prefix, name_property):
     fh = open(path)
     obj = json.loads(fh.read())
     fh.close()
+    print 'About to operate on %d features' % len(obj['features'])
     for i in obj['features']:
         #print i['properties']
         #break
@@ -34,6 +35,8 @@ if __name__ == '__main__':
     #counties_property = 'NAME'
     #cong = 'pa_97-14_cong.geojson'
     #cong_property = 'District_N'
-    wards = 'wards_12.geojson'
-    wards_property = 'District_N'
-    load_and_split('%s%s' % (DATA_PATH_PREFIX, wards), 'wards/ward', wards_property)
+    #wards = 'wards_12.geojson'
+    #wards_property = 'District_N'
+    precincts = 'precincts.geojson'
+    precinct_property = 'WARD_PRECI'
+    load_and_split('%s%s' % (DATA_PATH_PREFIX, precincts), 'precincts/precinct', precinct_property)
