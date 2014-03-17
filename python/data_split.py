@@ -22,6 +22,8 @@ def load_and_split(path, name_prefix, name_property):
 if __name__ == '__main__':
     #state_reps = 'state_reps_09.geojson'
     #state_rep_property = 'SLDLST'
-    cook_comms = 'cook_county_comm_10.geojson'
-    cook_comm_property = 'District_N'
-    load_and_split('%s%s' % (DATA_PATH_PREFIX, cook_comms), 'cook_comm', cook_comm_property)
+    #cook_comms = 'cook_county_comm_10.geojson'
+    #cook_comm_property = 'District_N'
+    cook_subcircuits = 'cook_subcircuits.geojson'
+    cook_subcircuit_property = 'DISTRICT'
+    load_and_split('%s%s' % (DATA_PATH_PREFIX, cook_subcircuits), 'cook_subcircuits', cook_subcircuit_property)
