@@ -1,6 +1,8 @@
 import json
 from copy import deepcopy
 
+DATA_PATH_PREFIX = 'data/'
+
 def load_and_split(path, name_prefix, name_property):
     """
     Extract all feature objects from a geojson object at path.
@@ -13,7 +15,7 @@ def load_and_split(path, name_prefix, name_property):
         print 'Starting %s' % name
         newobj = deepcopy(obj)
         newobj['features'] = [deepcopy(i)]
-        fh = open(name, 'w')
+        fh = open('%s%s' % (DATA_PATH_PREFIX, name), 'w')
         fh.write(json.dumps(newobj))
         fh.close()
 
