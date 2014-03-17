@@ -41,3 +41,21 @@ a, a:hover, a:active, a:visited {
   font-size: 12px;
   font-variant: small-caps;
 }
+
+@media (max-width: 800px) {
+  iframe {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 300px;
+  }
+}
